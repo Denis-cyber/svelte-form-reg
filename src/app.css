@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+form {
+  width: 650px;
+}
+
+.item-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.checkbox {
+  flex-direction: row;
+}
+
+.item-name {
+  display: flex;
+  margin-bottom: 8px;
+  color: #9d9d9d;
+  font-size: 14px;
+}
+
+.field-title::after {
+  content: '*';
+  color: #e21a3d;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.item-field {
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background-color: #f5f5f5;
+  outline: 0;
+}
+
+.tel-container {
+  display: flex;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background-color: #f5f5f5;
+  outline: 0;
+}
+
+.tel-input-mask {
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.tel-input {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  z-index: 2;
+  font-family: sans-serif;
+  padding: 12px 2px;
+  outline: 0;
+}
+
+.tel-mask {
+  padding: 12px 2px;
+  position: absolute;
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: sans-serif;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.flag-select-container {
+  display: flex;
+  position: relative;
+  margin-left: 12px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+select {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+
+.tel-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tel-arrow {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-field:focus {
+  border: 2px solid #555555;
+}
+
+.error-validation-tel {
+  border-color: #e21a3d;
+}
+
+.error-validation-pas {
+  border-color: #ff8c00;
+}
+
+.error-validation-tel:focus {
+  border: 2px solid #e21a3d;
+}
+
+.submit-btn {
+  width: 100%;
+  border-radius: 8px;
+  height: 44px;
+  font-size: 14px;
+  border: 0;
+  color: #9d9d9d;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.text-agree {
+  color: #262626;
+  font-size: 14px;
+  text-align: start;
+  margin-left: 5px;
+}
+
+.error-tel {
+  margin: 4px 0 0;
+  font-weight: 400;
+  color: #e21a3d;
+  text-align: left;
+}
+
+.message-pas-error {
+  margin: 4px 0 0;
+  font-weight: 400;
+  color: #ff8c00;
+  text-align: left;
+}
+
+.message-pas-success {
+  margin: 4px 0 0;
+  font-weight: 400;
+  color: #00984a;
+  text-align: left;
+}
+
+.block-rules {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 15%);
+  padding: 8px 12px;
+}
+
+.rule-content {
+  display: flex;
+}
+
+.rule-text {
+  color: #555;
+  padding: 2px 0;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.error-length {
+  color: #e21a3d;
+}
+
+.rule-icon {
+  width: 9px;
+  height: 9px;
+  margin-left: -2px;
+  margin-top: 3px;
+}
+
+.success {
+  color: #00984a;
+}

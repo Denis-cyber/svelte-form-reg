@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Uzbekistan",
+    "shortName": "UZB",
+    "telephoneDialingPrefix": "+998",
+    "telephoneMask": "+998 - XX - XXX - XXXX",
+    "img": "/flags/UZB.svg"
+  },
+  {
+    "id": 2,
+    "name": "Kazakhstan",
+    "shortName": "KAZ",
+    "telephoneDialingPrefix": "+7",
+    "telephoneMask": "+7(XXX) XXX - XX - XX",
+    "img": "/flags/KAZ.svg"
+  },
+  {
+    "id": 3,
+    "name": "Belarus",
+    "shortName": "BLR",
+    "telephoneDialingPrefix": "+375",
+    "telephoneMask": "+375(XX) XXX - XX - XX",
+    "img": "/flags/BLR.svg",
+    "regex": "^(\\+375\\(?(25|29|33|44|00)).*$"
+  },
+  {
+    "id": 4,
+    "name": "Georgia",
+    "shortName": "GEO",
+    "telephoneDialingPrefix": "+995",
+    "telephoneMask": "+995(XXX) XXX - XXX",
+    "img": "/flags/GEO.svg"
+  }
+]
